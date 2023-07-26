@@ -45,4 +45,28 @@ main()
 
 def change_me(val):
     val = 0
-    print("The value of parameter is ", val)
+    print("The value of parameter is now ", val)
+
+
+def main():
+    value = input("Enter any number ")
+    change_me(value)
+
+
+main()
+
+# in python you can pass valur to function by using keyword
+
+
+def show_interest(principal, rate, periods):
+    interest = principal * rate * periods
+    print('The simple interest will be $',
+          format(interest, ',.2f'),
+          sep='')
+
+
+def main():
+    show_interest(principal=1000.0, rate=0.1, periods=10)
+
+
+main()
