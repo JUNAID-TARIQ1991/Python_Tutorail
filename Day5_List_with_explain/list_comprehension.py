@@ -18,3 +18,11 @@ print(price)
 
 price_filter = [item for item in items if item[1] > 50]
 print(price_filter)
+
+# Dictionary comprehension:
+list = []
+for x in range(5):
+    list.append(x*2)
+
+values = [x*2 for x in range(5)]  # this code is identical to the loop one
+print(values)
