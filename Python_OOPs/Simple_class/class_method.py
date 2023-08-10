@@ -1,0 +1,21 @@
+class Point:
+
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    @classmethod  # decorator
+    def Zero(cls):  # in instance method self is reference to object, here cls is reference to Class
+        return cls(0, 0)
+
+    def draw(self):       # when we call this method, object automatically refered to this method using self parameter
+        print(f"Point: ({self.x},{self.y})")
+
+
+# class method
+point0 = Point.Zero()  # here this point class automatically efered to zero method
+point0.draw()
+point1 = Point(2, 7)
+point2 = Point(3, 8)
+
+point2.draw()
