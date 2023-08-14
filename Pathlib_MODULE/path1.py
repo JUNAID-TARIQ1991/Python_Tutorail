@@ -1,0 +1,10 @@
+from pathlib import Path
+print(Path.home())
+path = Path("/home/junaid/Desktop/PYTHON3/Modules/__init__.py")
+print(path.is_file())
+print(path.is_dir())
+print(path.name)
+print(path.suffix)
+print(path.parent)
+path = path.with_name("File.txt")
+print(path)
