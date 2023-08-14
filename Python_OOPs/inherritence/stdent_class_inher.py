@@ -1,3 +1,4 @@
+
 class ScoreModificationError(Exception):
     pass
 
@@ -44,3 +45,7 @@ print(junaid.grade(junaid.finalscore))
 
 zohaib = GradeActivity(100)
 print(zohaib.score)
+
+
+print(dir(GradeActivity))
+print(GradeActivity.__module__)

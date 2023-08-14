@@ -1,27 +1,30 @@
-class Rectangle:
-    def __init__(self, length, width):
-        self.__Rlength = length
-        self.__Rwidth = width
 
-    @property
-    def length(self):
-        return self.__Rlength
+if __name__ == "__min__":
 
-    @length.setter
-    def length(self, length):
-        self.__Rlength = length
+    class Rectangle:
+        def __init__(self, length, width):
+            self.__Rlength = length
+            self.__Rwidth = width
 
-    @property
-    def width(self):
-        return self.__Rwidth
+        @property
+        def length(self):
+            return self.__Rlength
 
-    @width.setter
-    def width(self, width):
-        self.__Rwidth = width
+        @length.setter
+        def length(self, length):
+            self.__Rlength = length
 
-    @property
-    def Area(self):
-        return self.__Rwidth * self.__Rlength
+        @property
+        def width(self):
+            return self.__Rwidth
+
+        @width.setter
+        def width(self, width):
+            self.__Rwidth = width
+
+        @property
+        def Area(self):
+            return self.__Rwidth * self.__Rlength
 
 
 """In this section, you define the Rectangle class with private attributes __Rlength and __Rwidth 
