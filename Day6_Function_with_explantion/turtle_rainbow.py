@@ -1,12 +1,14 @@
 # Python program to draw
 # Rainbow Benzene
 # using Turtle Programming
-import turtle
+from turtle import Turtle
+tur = Turtle()
+
 colors = ['red', 'purple', 'blue', 'green', 'orange', 'yellow']
-t = turtle.Pen()
-turtle.bgcolor('black')
+tur.pen()
+tur.screen.bgcolor('black')
 for x in range(360):
-    t.pencolor(colors[x % 6])
-    t.width(x//100 + 1)
-    t.forward(x)
-    t.left(59)
+    tur.pencolor(colors[x % 6])
+    tur.width(x//100 + 1)
+    tur.forward(x)
+    tur.left(59)

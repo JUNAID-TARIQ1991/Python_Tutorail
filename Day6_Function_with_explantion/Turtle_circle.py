@@ -1,11 +1,11 @@
-import turtle
+import tur
 
 
 def tur_circle(x, y, radius, color):
-    tur = turtle.Turtle()
+    tur = tur.Turtle()
     tur.hideturtle()
-    turtle.penup()
-    turtle.goto(x, y)
+    tur.penup()
+    tur.goto(x, y)
     tur.fillcolor('red')
     tur.begin_fill()
     tur.pendown()
@@ -14,9 +14,9 @@ def tur_circle(x, y, radius, color):
 
 
 def tur_triangle(x, y):
-    tur = turtle.Turtle()
-    turtle.penup()
-    turtle.goto(x, y)
+    tur = tur.Turtle()
+    tur.penup()
+    tur.goto(x, y)
     tur.fillcolor('red')
     tur.begin_fill()
     tur.pendown()
@@ -29,10 +29,10 @@ def tur_triangle(x, y):
 
 
 def main():
-    turtle.hideturtle()
+    tur.hideturtle()
     tur_circle(0, 0, 100, 'red')
     tur_triangle(-500, -500)
-    turtle.done()
+    tur.done()
 
 
 main()

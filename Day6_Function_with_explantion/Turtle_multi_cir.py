@@ -1,11 +1,11 @@
-import turtle
+import tur
 
 colors = ['red', 'blue', 'green', 'amber', 'yellow', 'violet']
 
 
 def mult_circ(x, y, radius):
-    tur = turtle.Turtle()
-    turtle.bgcolor("white")
+    tur = tur.Turtle()
+    tur.bgcolor("white")
     tur.penup()
     tur.goto(x, y)
 
@@ -19,7 +19,7 @@ def mult_circ(x, y, radius):
 
 def main():
     mult_circ(0, 0, 100)
-    turtle.done()
+    tur.done()
 
 
 main()

@@ -1,8 +1,8 @@
-import turtle
+import tur
 
 
 def tur_polygon(x, y):
-    tur = turtle.Turtle()
+    tur = tur.Turtle()
     tur.penup()
     tur.goto(x, y)
     tur.begin_fill()
@@ -19,7 +19,7 @@ def main():
     tur_polygon(0, 0)
 
     tur_polygon(-100, -200)
-    turtle.done()
+    tur.done()
 
 
 main()
